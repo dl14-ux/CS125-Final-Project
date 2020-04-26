@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
                 });
     }
+    //Goes to secondary activity: TaskDescriptionActivity
     private void addTask() {
         FloatingActionButton fab = findViewById(R.id.add_task);
         fab.setOnClickListener(new View.OnClickListener() {
