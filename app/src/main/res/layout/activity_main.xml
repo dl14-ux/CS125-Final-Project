@@ -6,13 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="600dp"
+        android:layout_marginLeft="600dp"
+        android:layout_marginTop="1150dp"
+        android:layout_marginEnd="355dp"
+        android:layout_marginRight="355dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/default_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ImageView
+        android:id="@+id/default_image"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@color/colorAccent" />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:text="      TO-DO"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ListView
+        android:id="@+id/task_list"
+        android:layout_width="409dp"
+        android:layout_height="579dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
