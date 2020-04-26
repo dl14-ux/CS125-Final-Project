@@ -7,7 +7,7 @@ import android.widget.Button;
 
 public class TaskDescriptionActivity extends MainActivity {
     Button send_task;
-
+    //UI
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
