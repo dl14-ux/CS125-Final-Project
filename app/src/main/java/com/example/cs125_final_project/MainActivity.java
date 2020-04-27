@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         itemsAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, tasks);
         task_list.setAdapter(itemsAdapter);
-        tasks.add("Add a task!");
 
         // implements remove
         removeTask();
