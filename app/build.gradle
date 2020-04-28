@@ -39,6 +39,7 @@ dependencies {
 
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:25.0.1'
     implementation 'com.google.android.gms:play-services-auth:15.0.1'
     implementation 'pub.devrel:easypermissions:0.3.0'
