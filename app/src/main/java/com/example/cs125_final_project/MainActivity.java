@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public ArrayAdapter<String> itemsAdapter;
     private ListView task_list;
     private DrawerLayout drawer;
+    EditText tru;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
