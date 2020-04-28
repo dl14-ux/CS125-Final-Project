@@ -77,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    // When held, the item is deleted (maybe change this to a button next to each task?)
     private void taskDescription() {
         task_list.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
