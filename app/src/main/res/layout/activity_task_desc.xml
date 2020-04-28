@@ -17,7 +17,7 @@
         android:id="@+id/task_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="      ADD TASK"
+        android:text="   ADD A DESCRIPTION"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,6 +43,24 @@
         android:inputType="textPersonName" />
 
     <TextView
+        android:id="@+id/date_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_weight="0"
+        android:text="Date By" />
+
+    <EditText
+        android:id="@+id/date_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_weight="0"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
         android:id="@+id/task_desc_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,15 +76,6 @@
         android:layout_marginRight="7dp"
         android:ems="10"
         android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="Not implemented yet" />
-
-    <Button
-        android:id="@+id/task_add_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp"
-        android:text="Add to List" />
+        android:inputType="textMultiLine" />
 
 </LinearLayout>
