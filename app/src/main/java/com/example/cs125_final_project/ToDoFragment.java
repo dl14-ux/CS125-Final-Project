@@ -1,6 +1,6 @@
 package com.example.cs125_final_project;
 
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,8 +21,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 
 
-public class ToDoFragment extends Fragment {
 
+public class ToDoFragment extends Fragment {
     public ToDoFragment() {
         //Empty
     }
@@ -59,6 +59,7 @@ public class ToDoFragment extends Fragment {
             }
         });
 
+
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
                     @Override
                     public boolean onItemLongClick(AdapterView<?> adapter,
@@ -74,4 +75,5 @@ public class ToDoFragment extends Fragment {
 
         return view;
     }
+
 }
