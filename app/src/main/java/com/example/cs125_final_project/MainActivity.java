@@ -1,14 +1,23 @@
 package com.example.cs125_final_project;
 
+
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+
+
 
 
 //Navigation from Coding in Flow on YouTube
@@ -37,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     new ToDoFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_todo);
         }
+
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
