@@ -41,6 +41,7 @@ public class CalendarFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_calendar, container, false);
+        //Code goes here
 
         calendarView = view.findViewById(R.id.cosmo_calendar);
         button = view.findViewById(R.id.selectButton);

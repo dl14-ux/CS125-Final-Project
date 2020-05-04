@@ -47,6 +47,7 @@ public class ToDoFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_todo, container, false);
+        //Code goes here
 
         loadData();
 
