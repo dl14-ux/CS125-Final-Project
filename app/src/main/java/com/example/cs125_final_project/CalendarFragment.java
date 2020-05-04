@@ -36,6 +36,7 @@ public class CalendarFragment extends Fragment {
     CalendarView calendarView;
     Button button;
     String startDate, endDate;
+    String useless;
 
     @Nullable
     @Override
