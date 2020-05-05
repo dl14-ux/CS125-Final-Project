@@ -1,35 +1,26 @@
 package com.example.cs125_final_project;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
-
-import com.applikeysolutions.cosmocalendar.dialog.CalendarDialog;
-import com.applikeysolutions.cosmocalendar.dialog.OnDaysSelectionListener;
-import com.applikeysolutions.cosmocalendar.model.Day;
-import com.applikeysolutions.cosmocalendar.selection.MultipleSelectionManager;
 import com.applikeysolutions.cosmocalendar.selection.RangeSelectionManager;
-import com.applikeysolutions.cosmocalendar.selection.SingleSelectionManager;
-import com.applikeysolutions.cosmocalendar.settings.appearance.ConnectedDayIconPosition;
+import com.applikeysolutions.cosmocalendar.settings.lists.connected_days.ConnectedDays;
 import com.applikeysolutions.cosmocalendar.utils.SelectionType;
 import com.applikeysolutions.cosmocalendar.view.CalendarView;
 
 import java.util.Calendar;
 import java.util.HashSet;
-import java.util.List;
-
-import com.applikeysolutions.cosmocalendar.view.CalendarView;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class CalendarFragment extends Fragment {
 
@@ -82,6 +73,21 @@ public class CalendarFragment extends Fragment {
                 Toast.makeText(getActivity(), "sup", Toast.LENGTH_LONG).show();
             }
         });
+
+
+        //Setting task dates
+        Calendar calendar = Calendar.getInstance();
+        Set<Long> days = new TreeSet<>();
+        days.add(calendar.getTimeInMillis());
+
+        //Define colors
+        int textColor = Color.parseColor("#ff0000");
+        int selectedTextColor = Color.parseColor("#ff4000");
+        int disabledTextColor = Color.parseColor("#ff8000");
+        ConnectedDays connectedDays = new ConnectedDays(days, textColor, selectedTextColor, disabledTextColor);
+
+        //Connect days to calendar
+        calendarView.addConnectedDays(connectedDays);
 
 
 
