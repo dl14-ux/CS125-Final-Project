@@ -55,13 +55,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ToDoFragment()).commit();
                 break;
-            case R.id.nav_calendar:
+            case R.id.nav_email:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new CalendarFragment()).commit();
-                break;
-            case R.id.nav_event:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new EventFragment()).commit();
+                        new EmailFragment()).commit();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

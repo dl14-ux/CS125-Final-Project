@@ -36,7 +36,7 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class ToDoFragment extends Fragment {
 
-    private ArrayList<String> menuItems;
+    public static ArrayList<String> menuItems;
 
     public ToDoFragment() {
         //Empty
