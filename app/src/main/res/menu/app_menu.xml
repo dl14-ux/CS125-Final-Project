@@ -10,14 +10,9 @@
             android:title="To-Do List"
              />
         <item
-            android:id="@+id/nav_event"
-            android:icon="@drawable/ic_calendar"
-            android:title="Events"
-            />
-        <item
-            android:id="@+id/nav_calendar"
-            android:icon="@drawable/ic_event"
-            android:title="Calendar"
+            android:id="@+id/nav_email"
+            android:icon="@drawable/ic_email"
+            android:title="Email List"
             />
     </group>
 
